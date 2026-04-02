@@ -1,0 +1,40 @@
+schema: hugoblox/author/v1
+slug: michael-chen-postdoc
+name:
+  display: Dr. Michael Chen
+role: Postdoctoral Researcher
+bio: Developing deep learning models for protein structure prediction and drug discovery.
+affiliations:
+  - name: University of Excellence
+    url: https://www.example.edu/
+links:
+  - icon: hero/envelope
+    url: mailto:michael.chen@example.edu
+  - icon: brands/x
+    url: https://twitter.com/MichaelChenPhD
+  - icon: brands/google-scholar
+    url: https://scholar.google.com/citations?user=XXXXXXX
+  - icon: brands/github
+    url: https://github.com/mchen-research
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/michael-chen-phd
+interests:
+  - Deep Learning
+  - Protein Folding
+  - Drug Discovery
+  - Structural Biology
+  - AlphaFold
+education:
+  - degree: PhD in Computational Biology
+    institution: UC San Diego
+    end: "2022-01-01"
+  - degree: MS in Bioinformatics
+    institution: Johns Hopkins University
+    end: "2018-01-01"
+  - degree: BS in Computer Science
+    institution: UCLA
+    end: "2016-01-01"
+highlight_name: false
+website: ""
+user_groups:
+  - Postdoctoral Researchers

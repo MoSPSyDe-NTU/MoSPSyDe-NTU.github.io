@@ -1,0 +1,39 @@
+schema: hugoblox/author/v1
+slug: emily-davis-phd
+name:
+  display: Emily Davis
+role: PhD Student (2nd Year)
+bio: Exploring neural network architectures for biological sequence analysis and prediction.
+affiliations:
+  - name: University of Excellence
+    url: https://www.example.edu/
+links:
+  - icon: hero/envelope
+    url: mailto:emily.davis@example.edu
+  - icon: brands/google-scholar
+    url: https://scholar.google.com/citations?user=XXXXXXX
+  - icon: brands/github
+    url: https://github.com/emily-davis-ml
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/emily-davis-ml
+interests:
+  - Neural Networks
+  - Sequence Analysis
+  - Natural Language Processing
+  - Bioinformatics
+  - Open Source Software
+education:
+  - degree: PhD in Computer Science
+    institution: University of Excellence
+    start: "2022-01-01"
+    summary: In progress
+  - degree: MS in Computer Science
+    institution: University of Washington
+    end: "2022-01-01"
+  - degree: BS in Computer Science & Biology
+    institution: Carnegie Mellon University
+    end: "2020-01-01"
+highlight_name: false
+website: ""
+user_groups:
+  - PhD Students

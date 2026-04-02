@@ -1,0 +1,38 @@
+schema: hugoblox/author/v1
+slug: sarah-johnson-phd
+name:
+  display: Sarah Johnson
+role: PhD Student (4th Year)
+bio: Investigating machine learning applications in genomic medicine and personalized healthcare.
+affiliations:
+  - name: University of Excellence
+    url: https://www.example.edu/
+links:
+  - icon: hero/envelope
+    url: mailto:sarah.johnson@example.edu
+  - icon: brands/x
+    url: https://twitter.com/SarahJ_CompBio
+  - icon: brands/google-scholar
+    url: https://scholar.google.com/citations?user=XXXXXXX
+  - icon: brands/github
+    url: https://github.com/sjohnson-compbio
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/sarah-johnson-compbio
+interests:
+  - Genomic Medicine
+  - Machine Learning
+  - Precision Medicine
+  - Single-Cell Analysis
+  - Healthcare AI
+education:
+  - degree: PhD in Computational Biology
+    institution: University of Excellence
+    start: "2020-01-01"
+    summary: In progress
+  - degree: BS in Biomedical Engineering
+    institution: Georgia Tech
+    end: "2020-01-01"
+highlight_name: false
+website: "https://sarahjohnson.github.io"
+user_groups:
+  - PhD Students

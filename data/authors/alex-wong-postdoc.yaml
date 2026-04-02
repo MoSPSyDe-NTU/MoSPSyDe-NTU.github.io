@@ -1,0 +1,40 @@
+schema: hugoblox/author/v1
+slug: alex-wong-postdoc
+name:
+  display: Dr. Alex Wong
+role: Postdoctoral Researcher
+bio: Applying computational methods to understand cellular mechanisms and develop therapeutic strategies.
+affiliations:
+  - name: University of Excellence
+    url: https://www.example.edu/
+links:
+  - icon: hero/envelope
+    url: mailto:alex.wong@example.edu
+  - icon: brands/x
+    url: https://twitter.com/AlexWongSysBio
+  - icon: brands/google-scholar
+    url: https://scholar.google.com/citations?user=XXXXXXX
+  - icon: brands/github
+    url: https://github.com/awong-sysbio
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/alex-wong-sysbio
+interests:
+  - Systems Biology
+  - Network Analysis
+  - Drug Repurposing
+  - Cell Signaling
+  - Multi-omics Integration
+education:
+  - degree: PhD in Systems Biology
+    institution: Harvard University
+    end: "2021-01-01"
+  - degree: MS in Computational Biology
+    institution: Carnegie Mellon University
+    end: "2017-01-01"
+  - degree: BS in Biochemistry
+    institution: UC Berkeley
+    end: "2015-01-01"
+highlight_name: false
+website: ""
+user_groups:
+  - Postdoctoral Researchers
