@@ -1,0 +1,147 @@
+{{ define "main" }}
+{{ $kind := .Params.publication_kind }}
+{{ $data := index site.Data.publications $kind }}
+
+<div class="universal-wrapper">
+  <div class="article-container pt-3">
+
+    <style>
+      .publication-page {
+        max-width: 980px;
+        margin: 0 auto;
+      }
+      .publication-tabs {
+        display: flex;
+        gap: 0.75rem;
+        margin-bottom: 1.5rem;
+        border-bottom: 1px solid #ddd;
+        padding-bottom: 0.6rem;
+        flex-wrap: wrap;
+      }
+      .publication-tab {
+        display: inline-block;
+        padding: 0.5rem 0.9rem;
+        border: 1px solid #ddd;
+        border-radius: 999px;
+        text-decoration: none;
+      }
+      .publication-tab.active {
+        font-weight: 700;
+        background: #f5f5f5;
+      }
+      .publication-list {
+        padding-left: 1.4rem;
+      }
+      .publication-list li {
+        margin-bottom: 1rem;
+      }
+      .pub-title {
+        font-weight: 700;
+      }
+      .pub-empty {
+        color: #666;
+      }
+    </style>
+
+    <div class="publication-page">
+      <h1>Publications</h1>
+
+      <div class="publication-tabs">
+        <a
+          class="publication-tab {{ if eq $kind "journal_articles" }}active{{ end }}"
+          href="/publications/journal-articles/">
+          Journal Articles
+        </a>
+        <a
+          class="publication-tab {{ if eq $kind "books" }}active{{ end }}"
+          href="/publications/books/">
+          Books &amp; Book Chapters
+        </a>
+      </div>
+
+      {{ if eq $kind "journal_articles" }}
+        <h2>Journal Articles</h2>
+      {{ else if eq $kind "books" }}
+        <h2>Books &amp; Book Chapters</h2>
+      {{ end }}
+
+      {{ if and $data $data.items (gt (len $data.items) 0) }}
+        <ol class="publication-list">
+          {{ range sort $data.items "year" "desc" }}
+            {{ $entry := . }}
+            {{ $authorParts := slice }}
+
+            {{ range $entry.authors }}
+              {{ $authorName := . }}
+              {{ $linkedAuthor := "" }}
+
+              {{ range $entry.group_members }}
+                {{ $slug := . }}
+                {{ $member := index site.Data.authors $slug }}
+                {{ if $member }}
+                  {{ $display := $slug | humanize }}
+                  {{ with $member.name }}
+                    {{ with .display }}
+                      {{ $display = . }}
+                    {{ end }}
+                  {{ end }}
+                  {{ if eq $display $authorName }}
+                    {{ $linkedAuthor = printf `<a href="/authors/%s/">%s</a>` $slug $authorName }}
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+
+              {{ if ne $linkedAuthor "" }}
+                {{ $authorParts = $authorParts | append $linkedAuthor }}
+              {{ else }}
+                {{ $authorParts = $authorParts | append $authorName }}
+              {{ end }}
+            {{ end }}
+
+            <li>
+              {{ delimit $authorParts ", " | safeHTML }}.
+              <span class="pub-title">{{ $entry.title }}</span>.
+
+              {{ if eq $kind "journal_articles" }}
+                <em>
+                  {{ with $entry.venue }}{{ . }}{{ end }}
+                  {{ with $entry.volume }}, {{ . }}{{ end }}
+                  {{ with $entry.number }}({{ . }}){{ end }}
+                  {{ with $entry.pages }}, pp. {{ . }}{{ end }}
+                  {{ with $entry.year }}, {{ . }}{{ end }}
+                </em>.
+              {{ else if eq $kind "books" }}
+                <em>
+                  {{ if eq $entry.type "chapter" }}
+                    {{ with $entry.booktitle }}In {{ . }}{{ end }}
+                    {{ with $entry.editors }}
+                      {{ if gt (len .) 0 }}, edited by {{ delimit . ", " }}{{ end }}
+                    {{ end }}
+                    {{ with $entry.pages }}, pp. {{ . }}{{ end }}
+                    {{ with $entry.publisher }}, {{ . }}{{ end }}
+                    {{ with $entry.year }}, {{ . }}{{ end }}
+                  {{ else }}
+                    {{ with $entry.publisher }}{{ . }}{{ end }}
+                    {{ with $entry.year }}, {{ . }}{{ end }}
+                  {{ end }}
+                </em>.
+              {{ end }}
+
+              {{ with $entry.url }}
+                <a href="{{ . }}" target="_blank" rel="noopener">Link</a>
+              {{ end }}
+
+              {{ with $entry.doi }}
+                DOI:
+                <a href="https://doi.org/{{ . }}" target="_blank" rel="noopener">{{ . }}</a>
+              {{ end }}
+            </li>
+          {{ end }}
+        </ol>
+      {{ else }}
+        <p class="pub-empty">To be updated.</p>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}

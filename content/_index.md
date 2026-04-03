@@ -109,8 +109,8 @@ sections:
     id: team
     content:
       title: Meet Our Team
-      subtitle: 'World-class researchers pushing the boundaries of science'
-      text: 'Our diverse team of researchers brings together expertise from multiple disciplines to tackle the most challenging problems in computational biology and machine learning.'
+      subtitle: 'Motivated researchers pushing the boundaries of science'
+      text: 'We tackle the most challenging problems toward sustainable processes and systems.'
       user_groups:
         - Principal Investigator
         - Researchers
@@ -133,38 +133,38 @@ sections:
       spacing:
         padding: ["3rem", 0, "3rem", 0]
 
-  - block: cta-image-paragraph
-    content:
-      items:
-        - title: 'State-of-the-Art Research Environment'
-          text: |
-            Our laboratory features cutting-edge equipment and modern research facilities designed to support breakthrough discoveries. From advanced computational clusters to precision instrumentation, we provide our researchers with the tools they need to push the boundaries of science.
-          image: pexels-polina-tankilevitch-3735769.jpg
-          feature_icon: hero/check-circle
-          features:
-            - 'High-Performance Computing: 500+ core GPU cluster for AI/ML research'
-            - 'Advanced Instrumentation: Precision equipment for materials characterization'
-            - 'Safety & Compliance: Full safety protocols and regulatory compliance'
-          button:
-            text: 'Virtual Lab Tour'
-            url: '/facilities'
+  # - block: cta-image-paragraph
+  #   content:
+  #     items:
+  #       - title: 'State-of-the-Art Research Environment'
+  #         text: |
+  #           Our laboratory features cutting-edge equipment and modern research facilities designed to support breakthrough discoveries. From advanced computational clusters to precision instrumentation, we provide our researchers with the tools they need to push the boundaries of science.
+  #         image: pexels-polina-tankilevitch-3735769.jpg
+  #         feature_icon: hero/check-circle
+  #         features:
+  #           - 'High-Performance Computing: 500+ core GPU cluster for AI/ML research'
+  #           - 'Advanced Instrumentation: Precision equipment for materials characterization'
+  #           - 'Safety & Compliance: Full safety protocols and regulatory compliance'
+  #         button:
+  #           text: 'Virtual Lab Tour'
+  #           url: '/facilities'
 
-        - title: 'Collaborative Innovation Culture' 
-          text: |
-            Breakthrough research happens through collaboration. Our open lab environment fosters cross-disciplinary partnerships, knowledge sharing, and mentorship between senior researchers and emerging scientists. Every team member contributes to our collective mission of advancing scientific understanding.
-          image: pexels-canvastudio-3153198.jpg
-          feature_icon: hero/users
-          features:
-            - 'Cross-Disciplinary Teams: Biologists, engineers, and computer scientists working together'
-            - 'Knowledge Sharing: Weekly seminars and collaborative research meetings'
-            - 'Mentorship Program: Structured guidance for PhD students and postdocs'
-          button:
-            text: 'Join Our Community'
-            url: '/opportunities'
-    design:
-      css_class: "bg-white dark:bg-gray-800"
-      spacing:
-        padding: ["4rem", 0, "4rem", 0]
+  #       - title: 'Collaborative Innovation Culture' 
+  #         text: |
+  #           Breakthrough research happens through collaboration. Our open lab environment fosters cross-disciplinary partnerships, knowledge sharing, and mentorship between senior researchers and emerging scientists. Every team member contributes to our collective mission of advancing scientific understanding.
+  #         image: pexels-canvastudio-3153198.jpg
+  #         feature_icon: hero/users
+  #         features:
+  #           - 'Cross-Disciplinary Teams: Biologists, engineers, and computer scientists working together'
+  #           - 'Knowledge Sharing: Weekly seminars and collaborative research meetings'
+  #           - 'Mentorship Program: Structured guidance for PhD students and postdocs'
+  #         button:
+  #           text: 'Join Our Community'
+  #           url: '/opportunities'
+  #   design:
+  #     css_class: "bg-white dark:bg-gray-800"
+  #     spacing:
+  #       padding: ["4rem", 0, "4rem", 0]
 
 
 
@@ -193,32 +193,17 @@ sections:
     #       tag: Materials
     design:
       view: article-grid
-      columns: 2
+      columns: 1
 
-  - block: collection
+  - block: markdown
     id: publications
     content:
       title: Recent Publications
-      text: ''
-      filters:
-        folders:
-          - publications
-        exclude_featured: false
-      count: 5
+      subtitle: ""
+      text: "{{< publications_recent >}}"
     design:
-      view: citation
+      columns: "1"
 
-  - block: collection
-    id: featured
-    content:
-      title: Featured Research
-      filters:
-        folders:
-          - publications
-        featured_only: true
-    design:
-      view: article-grid
-      columns: 2
 
   - block: collection
     id: events
@@ -246,7 +231,7 @@ sections:
   - block: collection
     id: news
     content:
-      title: Lab News & Updates
+      title: Group News & Updates
       subtitle: ''
       text: ''
       # Page type to display. E.g. post, talk, publication...
@@ -274,39 +259,39 @@ sections:
   - block: logos
     content:
       title: Collaborators & Partners
-      subtitle: Leading the way together
-      text: We work with top universities, research institutes, and industry leaders to advance scientific discovery
+      subtitle: Work with us!
+      text: We are keen to collaborate with both academic researchers and industry leaders to advance PSE.
       logos:
-        - name: MIT
-          image: partners/placeholder-logo.svg
-          url: https://mit.edu
-          external: true
-          description: Massachusetts Institute of Technology
-        - name: Stanford University
-          image: partners/placeholder-logo.svg
-          url: https://stanford.edu
-          external: true
-          description: Stanford Research Collaboration
-        - name: Google Research
-          image: partners/placeholder-logo.svg
-          url: https://research.google
-          external: true
-          description: AI & Machine Learning Partnership
-        - name: National Science Foundation
-          image: partners/placeholder-logo.svg
-          url: https://nsf.gov
-          external: true
-          description: Research Funding Partner
-        - name: Microsoft Research
-          image: partners/placeholder-logo.svg
-          url: https://www.microsoft.com/research
-          external: true
-          description: Computing Research Collaboration
-        - name: NIH
-          image: partners/placeholder-logo.svg
-          url: https://nih.gov
-          external: true
-          description: National Institutes of Health
+        # - name: MIT
+        #   image: partners/placeholder-logo.svg
+        #   url: https://mit.edu
+        #   external: true
+        #   description: Massachusetts Institute of Technology
+        # - name: Stanford University
+        #   image: partners/placeholder-logo.svg
+        #   url: https://stanford.edu
+        #   external: true
+        #   description: Stanford Research Collaboration
+        # - name: Google Research
+        #   image: partners/placeholder-logo.svg
+        #   url: https://research.google
+        #   external: true
+        #   description: AI & Machine Learning Partnership
+        # - name: National Science Foundation
+        #   image: partners/placeholder-logo.svg
+        #   url: https://nsf.gov
+        #   external: true
+        #   description: Research Funding Partner
+        # - name: Microsoft Research
+        #   image: partners/placeholder-logo.svg
+        #   url: https://www.microsoft.com/research
+        #   external: true
+        #   description: Computing Research Collaboration
+        # - name: NIH
+        #   image: partners/placeholder-logo.svg
+        #   url: https://nih.gov
+        #   external: true
+        #   description: National Institutes of Health
       cta:
         text: Become a Partner
         url: /#contact
@@ -323,51 +308,38 @@ sections:
     content:
       title: Contact Us
       subtitle: Get in touch with our research team
-      visit_title: Visit Our Lab
+      visit_title: Visit Our Group
       connect_title: Connect With Us
       address:
         lines:
-          - Smith Laboratory
-          - Department of Computer Science
-          - University of Excellence
-          - 123 Science Drive
-          - Excellence City, EC 12345
-          - United States
+          - Ken Research Group (MoSPSyDe)
+          - School of Chemistry, Chemical Engineering and Biotechnology (CCEB)
+          - Nanyang Technological University
+          - 62 Nanyang Drive
+          - Singapore 637459
       office_hours:
-        - "Monday - Friday: 9:00 AM - 5:00 PM"
-        - "Lab Meetings: Fridays 2:00 PM"
-      email: lab@example.edu
-      phone: "+1 (555) 123-4567"
+        - "Monday - Friday"
+        - "Group Meetings: TBD"
+      email: kensaku.matsunami@ntu.edu.sg
+      phone: "TBA"
       social:
-        - icon: brands/x
-          url: https://twitter.com/SmithLabResearch
+        # - icon: brands/x
+        #   url: https://twitter.com/SmithLabResearch
         - icon: brands/linkedin
-          url: https://linkedin.com/company/smith-lab
+          #url: https://linkedin.com/company/smith-lab
         - icon: brands/github
-          url: https://github.com/smith-lab
+          #url: https://github.com/smith-lab
       prospective:
         title: Prospective Members
-        text: Interested in joining our lab? We're always looking for motivated researchers at all levels.
+        text: Interested in joining our group? We're always looking for motivated researchers at all levels.
         button:
           text: View Open Positions
           url: /opportunities
-      map_url: https://maps.google.com/?q=University+of+Excellence
+      map_url: https://maps.app.goo.gl/J4eiQBUbeFA3NBK88
       show_form: false
     design:
       css_class: "bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800"
       spacing:
         padding: ["5rem", 0, "5rem", 0]
 
-  - block: cta-card
-    content:
-      title: Join Our Research Team
-      text: We are always looking for talented and motivated researchers to join our lab. We have openings for PhD students, postdoctoral researchers, and research scientists.
-      button:
-        text: View Open Positions
-        url: /opportunities
-    design:
-      card:
-        # Card background color (CSS class)
-        css_class: 'bg-primary-300 dark:bg-primary-700'
-        css_style: ''
 ---

@@ -2,7 +2,7 @@ schema: hugoblox/author/v1
 slug: ken
 is_owner: true
 name:
-  display: Kensaku Matsunami
+  display: Asst. Prof. Kensaku Matsunami
 role: Principal Investigator & Assistant Professor
 bio: ""
 affiliations:
@@ -42,10 +42,31 @@ work_experience:
   - position: Assistant Professor (tenure-track)
     institution: Nanyang Technological University
     start: "2026-04-01"
+    end: ""
+  - position: PostDoctoral Research Associate 
+    institution: Purdue University
+    start: "2024-08-01"
+    end: "2026-03-31"
+  - position: Postdoctoral Researcher
+    institution: Ghent University
+    start: "2021-08-01"
+    end: "2024-07-31"
 publications_manual:
-  - "A. Author, **Kensaku Matsunami**, C. Author. Title. *Journal/Conference*, 2025."
+  # - type: Journal
+    # title: "A"
+    # authors:
+    #   - "Kensaku Matsunami"
+    # group_members:
+    #   - ken
+    # venue: "A"
+    # year: 22
+    # volume: "1"
+    # number: ""
+    # pages: "3"
+    # doi: "1"
+    # url: "2"
 awards_manual:
-  - "Best paper Award, Conference Name, 2025."
+  - #"Best paper Award, Conference Name, 2025."
 skills:
   - name: Technical
     items:

@@ -1,0 +1,51 @@
+{{ $data := site.Data.publications.journal_articles }}
+
+{{ if and $data $data.items (gt (len $data.items) 0) }}
+  <ol class="publication-list">
+    {{ range first 5 (sort $data.items "year" "desc") }}
+      {{ $entry := . }}
+      {{ $authorParts := slice }}
+
+      {{ range $entry.authors }}
+        {{ $authorName := . }}
+        {{ $linkedAuthor := "" }}
+
+        {{ range $entry.group_members }}
+          {{ $slug := . }}
+          {{ $member := index site.Data.authors $slug }}
+          {{ if $member }}
+            {{ $display := $slug | humanize }}
+            {{ with $member.name }}
+              {{ with .display }}
+                {{ $display = . }}
+              {{ end }}
+            {{ end }}
+            {{ if eq $display $authorName }}
+              {{ $linkedAuthor = printf `<a href="/authors/%s/">%s</a>` $slug $authorName }}
+            {{ end }}
+          {{ end }}
+        {{ end }}
+
+        {{ if ne $linkedAuthor "" }}
+          {{ $authorParts = $authorParts | append $linkedAuthor }}
+        {{ else }}
+          {{ $authorParts = $authorParts | append $authorName }}
+        {{ end }}
+      {{ end }}
+
+      <li>
+        {{ delimit $authorParts ", " | safeHTML }}.
+        <span class="pub-title">{{ $entry.title }}</span>.
+        <em>
+          {{ with $entry.venue }}{{ . }}{{ end }}
+          {{ with $entry.volume }}, {{ . }}{{ end }}
+          {{ with $entry.number }}({{ . }}){{ end }}
+          {{ with $entry.pages }}, pp. {{ . }}{{ end }}
+          {{ with $entry.year }}, {{ . }}{{ end }}
+        </em>.
+      </li>
+    {{ end }}
+  </ol>
+{{ else }}
+  <p class="pub-empty">To be updated.</p>
+{{ end }}

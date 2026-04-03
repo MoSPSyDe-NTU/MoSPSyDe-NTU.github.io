@@ -1,0 +1,28 @@
+items:
+  # - id: book1
+  #   type: book
+  #   titile: "Title of the first journal paper"
+  #   authors:
+  #     - "Kensaku Matsunami"
+  #     - "Arata Hanae"
+  #   group_members:
+  #     - ken
+  #   publisher: "Springer"
+  #   year: 2025
+  #   url: "33"
+
+  # - id: chapter1
+  #   type: chapter
+  #   titile: "Title of the first journal paper"
+  #   authors:
+  #     - "Kensaku Matsunami"
+  #     - "Arata Hanae"
+  #   group_members:
+  #     - ken
+  #   booktitle: "AA"
+  #   editors:
+  #     - "A"
+  #   publisher: "Springer"
+  #   pages: "1-4"
+  #   year: 2023
+  #   url: "33"

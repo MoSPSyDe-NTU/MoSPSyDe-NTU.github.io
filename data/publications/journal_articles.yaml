@@ -1,0 +1,30 @@
+items:
+  # - id: matsunami-2025-paper1
+  #   titile: "Title of the first journal paper"
+  #   authors:
+  #     - "Kensaku Matsunami"
+  #     - "Arata Hanae"
+  #   group_members:
+  #     - ken
+  #   venue: "International Journal"
+  #   year: 2025
+  #   volume: "1"
+  #   number: "2"
+  #   pages: "1-4"
+  #   doi: "11"
+  #   url: "33"
+
+  # - id: matsunami-2025-paper2
+  #   titile: "Title of the first journal paper"
+  #   authors:
+  #     - "Kensaku Matsunami"
+  #     - "Hanae Mitoko"
+  #   group_members:
+  #     - ken
+  #   venue: "International Journal"
+  #   year: 2026
+  #   volume: "1"
+  #   number: "2"
+  #   pages: "1-4"
+  #   doi: "11"
+  #   url: "33"
