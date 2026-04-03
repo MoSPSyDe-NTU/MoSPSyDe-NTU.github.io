@@ -1,1 +1,101 @@
+{{ define "main" }}
+  {{ $slug := .Data.Term }}
+  {{ $author := index site.Data.authors $slug }}
 
+  <div class="universal-wrapper py-3">
+    <div class="article-container">
+
+      {{ if not $author }}
+        <h1>{{ .Title }}</h1>
+        <p>No author data found for <code>{{ $slug }}</code>.</p>
+        <p>Expected file: <code>data/authors/{{ $slug }}.yaml</code></p>
+      {{ else }}
+
+        <header class="mb-5">
+          <h1>{{ with $author.title }}{{ . }}{{ else }}{{ $slug | humanize }}{{ end }}</h1>
+
+          {{ with $author.role }}
+            <p class="page-subtitle">{{ . }}</p>
+          {{ end }}
+
+          {{ with $author.organizations }}
+            <div class="mb-3">
+              {{ range . }}
+                <div>
+                  {{ with .url }}<a href="{{ . }}">{{ end }}
+                  {{ .name }}
+                  {{ with .url }}</a>{{ end }}
+                </div>
+              {{ end }}
+            </div>
+          {{ end }}
+        </header>
+
+        {{ with $author.bio }}
+          <section class="mb-5">
+            <h2>Biography</h2>
+            <div>{{ . | markdownify }}</div>
+          </section>
+        {{ end }}
+
+        {{ with $author.interests }}
+          <section class="mb-5">
+            <h2>Research Interests</h2>
+            <ul>
+              {{ range . }}
+                <li>{{ . }}</li>
+              {{ end }}
+            </ul>
+          </section>
+        {{ end }}
+
+        {{ with $author.education }}
+          <section class="mb-5">
+            <h2>Education</h2>
+            <ul>
+              {{ range . }}
+                <li class="mb-3">
+                  {{ with .course }}<strong>{{ . }}</strong><br>{{ end }}
+                  {{ with .degree }}<strong>{{ . }}</strong><br>{{ end }}
+                  {{ with .institution }}{{ . }}<br>{{ end }}
+                  {{ with .year }}<span>{{ . }}</span>{{ end }}
+                  {{ with .end }}<span>{{ . }}</span>{{ end }}
+                  {{ with .summary }}
+                    <div>{{ . | markdownify }}</div>
+                  {{ end }}
+                </li>
+              {{ end }}
+            </ul>
+          </section>
+        {{ end }}
+
+        {{ with $author.social }}
+          <section class="mb-5">
+            <h2>Links</h2>
+            <ul>
+              {{ range . }}
+                <li>
+                  <a href="{{ .link }}">{{ .link }}</a>
+                </li>
+              {{ end }}
+            </ul>
+          </section>
+        {{ end }}
+
+        {{ $pages := where site.RegularPages "Params.authors" "intersect" (slice $slug) }}
+        {{ if gt (len $pages) 0 }}
+          <section class="mb-5">
+            <h2>Content by {{ with $author.title }}{{ . }}{{ else }}{{ $slug | humanize }}{{ end }}</h2>
+            <ul>
+              {{ range $pages.ByDate.Reverse }}
+                <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+              {{ end }}
+            </ul>
+          </section>
+        {{ end }}
+
+      {{ end }}
+
+    </div>
+  </div>
+{{ end }}
