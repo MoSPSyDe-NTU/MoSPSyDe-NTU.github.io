@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: ''
-date: 2022-10-24
+date: 2026-04-03
 type: landing
 
 design:
@@ -13,10 +13,10 @@ sections:
     id: about
     content:
       title: |
-        Research Lab for
-        **Advancing Science**
+        Model-based Sustainable Process and System Design
+        **(MoSPSyDe)**
       text: |
-        We are a leading research group focused on pushing the boundaries of knowledge through innovative research and collaboration. Our multidisciplinary team works on cutting-edge projects at the intersection of technology and science.
+        We are a passionate research group focused on process systems engineering (PSE) at Nanyang Technological University (NTU), Singapore. Our team synergizes innovative mechanistic modeling and machine learning for sustainable process and system design.
       primary_action:
         text: Join Our Team
         url: '#team'
@@ -26,9 +26,9 @@ sections:
         url: '#publications'
         icon: hero/academic-cap
       announcement:
-        text: "We are hiring PhD students and postdocs!"
+        text: "We are welcoming PhD students and postdocs!"
         link:
-          text: "Apply now"
+          text: "Contact us now"
           url: "/opportunities"
     design:
       # For full-screen, add `min-h-screen` below
@@ -52,87 +52,46 @@ sections:
         #     brightness: 0.6
         #     contrast: 1.1
 
-  - block: stats
-    content:
-      items:
-        - statistic: "50+"
-          description: Publications in top-tier journals
-          sub_metric: Nature, Science, Cell, PNAS
-          icon: hero/document-text
-        - statistic: "15"
-          description: Brilliant researchers and scientists
-          sub_metric: From 8 countries worldwide
-          icon: hero/user-group
-        - statistic: "$5M"
-          description: Active research funding
-          sub_metric: NSF, NIH, DOE grants
-          icon: hero/currency-dollar
-        - statistic: "12"
-          description: Active research projects
-          sub_metric: Across 3 major domains
-          icon: hero/beaker
-    design:
-      layout: cards
-      # Section background color (CSS class)
-      css_class: "bg-gradient-to-b from-primary-50 to-white dark:from-primary-900/20 dark:to-gray-800"
-      spacing:
-        padding: ["3rem", 0, "3rem", 0]
-
   - block: research-areas
     content:
       title: Research Focus Areas
-      subtitle: Pushing the Boundaries of Science
-      text: Our lab conducts cutting-edge research across multiple domains, combining computational methods with experimental validation
+      subtitle: Advancing PSE for sustainability and digitalization
+      text: Our group conducts cutting-edge research across multiple domains, applying mathematical models for solving global challenges
       items:
-        - name: Computational Biology
-          description: Developing state-of-the-art algorithms for genomic analysis, protein structure prediction, and systems biology modeling
-          icon: hero/beaker
-          gradient: from-green-400 to-emerald-600
+        - name: Pharmaceutical Engineering
+          description: Developing innovative mathematical models for pharmaceutical processes to reduce experimental effort and improve product quality
+          icon: emoji/pill
+          gradient: from-blue-400 to-indigo-600
           status: active
-          topics:
-            - Genomics
-            - Proteomics
-            - Bioinformatics
-            - Systems Biology
-            - Drug Discovery
-          team_size: 12
-          publications: 45+
-          funding: $2.5M NSF/NIH
+          #topics:
+           # - Genomics
+          team_size: 1
+          publications: 0
+          #funding: $2.5M NSF/NIH
           cta:
             text: Explore Projects
             url: /research/computational-biology
             
-        - name: Machine Learning
-          description: Advancing deep learning methods for scientific discovery, with focus on interpretable AI and physics-informed neural networks
-          icon: hero/cpu-chip
-          gradient: from-purple-400 to-pink-600
-          status: active
-          topics:
-            - Deep Learning
-            - Computer Vision
-            - NLP
-            - Graph Neural Networks
-            - Explainable AI
-          team_size: 8
-          publications: 32+
-          funding: $1.8M NSF
+        - name: Sustainability Engineering
+          description: Designing sustainable processes and systems based on uncertainty-conscious techno-economic assessment (TEA) and life-cycle assessment (LCA)
+          icon: hero/globe-europe-africa
+          gradient: from-green-400 to-emerald-600
+          status: emerging
+          team_size: 0
+          publications: 0
+          #funding: $1.8M NSF
           cta:
             text: View Research
             url: /research/machine-learning
             
-        - name: Materials Science
-          description: Designing novel materials through computational modeling and machine learning-guided discovery
-          icon: emoji/atom_symbol
-          gradient: from-blue-400 to-indigo-600
-          status: emerging
-          topics:
-            - Nanomaterials
-            - Quantum Materials
-            - Energy Storage
-            - Catalysis
-          team_size: 6
-          publications: 28+
-          funding: $1.2M DOE
+        - name: Particle Engineering
+          description: Advancing particle-involved processes through integrated population balance modeling (PBM) and machine learning
+          icon: hero/sparkles
+          gradient: from-purple-400 to-pink-600
+          status: active
+          team_size: 1
+          publications: 0
+          #funding: $1.2M DOE
           cta:
             text: Learn More
             url: /research/materials-science
@@ -145,6 +104,34 @@ sections:
       css_class: "bg-gradient-to-b from-gray-50 to-white dark:from-gray-900 dark:to-gray-800"
       spacing:
         padding: ["5rem", 0, "5rem", 0]
+
+  - block: team-showcase
+    id: team
+    content:
+      title: Meet Our Team
+      subtitle: 'World-class researchers pushing the boundaries of science'
+      text: 'Our diverse team of researchers brings together expertise from multiple disciplines to tackle the most challenging problems in computational biology and machine learning.'
+      user_groups:
+        - Principal Investigator
+        - Researchers
+        #- Postdoctoral Researchers
+        #- PhD Students
+      sort_by: 'Params.last_name'
+      sort_ascending: true
+      cta:
+        text: View All Team Members
+        url: /authors
+        icon: user-group
+    design:
+      show_role: true
+      show_organizations: false
+      show_interests: true
+      show_social: true
+      # Section background color
+      css_class: "bg-gray-50 dark:bg-gray-900"
+      # Reduce spacing
+      spacing:
+        padding: ["3rem", 0, "3rem", 0]
 
   - block: cta-image-paragraph
     content:
@@ -179,32 +166,7 @@ sections:
       spacing:
         padding: ["4rem", 0, "4rem", 0]
 
-  - block: team-showcase
-    id: team
-    content:
-      title: Meet Our Team
-      subtitle: 'World-class researchers pushing the boundaries of science'
-      text: 'Our diverse team of researchers brings together expertise from multiple disciplines to tackle the most challenging problems in computational biology and machine learning.'
-      user_groups:
-        - Principal Investigators
-        - Postdoctoral Researchers
-        - PhD Students
-      sort_by: 'Params.last_name'
-      sort_ascending: true
-      cta:
-        text: View All Team Members
-        url: /authors
-        icon: user-group
-    design:
-      show_role: true
-      show_organizations: false
-      show_interests: true
-      show_social: true
-      # Section background color
-      css_class: "bg-gray-50 dark:bg-gray-900"
-      # Reduce spacing
-      spacing:
-        padding: ["3rem", 0, "3rem", 0]
+
 
   - block: collection
     id: projects

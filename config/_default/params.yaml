@@ -13,18 +13,16 @@ hugoblox:
   # ────────────────────────────────────────────────────────────────────────────
   identity:
     # Site name - shown in navbar, footer, copyright, and browser title by default
-    name: "Research Lab"
+    name: "Ken Research Group"
     # Legal entity for copyright notices (defaults to name if not set)
-    organization: "Research Lab"
+    organization: "Ken Research Group"
     # Schema.org type for structured data
     type: organization                  # person | organization | local_business
     # Short tagline displayed on your site
     tagline: ""
     # Site meta description for search engines and social sharing
-    description: "Leading research lab advancing knowledge through innovative scientific discovery and collaboration."
-    # Social accounts (used for meta tags like Twitter Cards)
-    social:
-      twitter: "GetResearchDev"         # Twitter/X handle for Twitter Cards (without @)
+    description: "Model-based Sustainable Process and System Design (MoSPSyDe) at Nanyang Tehcnological University (NTU), Singapore."
+    
 
   # ────────────────────────────────────────────────────────────────────────────
   # THEME
@@ -34,7 +32,7 @@ hugoblox:
     # Mode: 'light', 'dark', or 'system' (follows OS preference)
     mode: system
     # Theme pack: name from data/themes/ or { light: "x", dark: "y" } for mix-and-match
-    pack: "default"
+    pack: minimal
     # Optional: Override theme pack colors
     colors:
       primary: "indigo"                 # Tailwind palette name or hex (e.g., "indigo" or "#6366f1")
@@ -91,7 +89,7 @@ hugoblox:
     # Feature toggles
     search: true
     theme_toggle: true
-    theme_picker: true
+    theme_picker: false
     language_switcher: true
     # Call-to-action button
     cta:

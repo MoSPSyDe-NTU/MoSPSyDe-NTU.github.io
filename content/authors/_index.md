@@ -21,7 +21,7 @@ Our lab brings together talented researchers from diverse backgrounds, united by
 
 ## Team Structure
 
-- **Principal Investigators**: Leading research vision and strategy
+- **Principal Investigator**: Leading research vision and strategy
 - **Postdoctoral Researchers**: Driving cutting-edge research projects
 - **PhD Students**: Developing next-generation research capabilities
 - **Research Scientists**: Providing technical expertise and continuity
