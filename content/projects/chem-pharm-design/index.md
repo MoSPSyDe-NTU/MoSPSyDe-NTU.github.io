@@ -8,7 +8,7 @@ tags:
 featured: true
 summary: "Advancing mechanistic models that can design pharmaceutical crystallisation processes by integrating them with machine learning tools."
 image:
-  filename: #featured.png
+  filename: featured.png
   focal_point: "Center"
 ---
 
