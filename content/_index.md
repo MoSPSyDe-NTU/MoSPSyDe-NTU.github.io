@@ -18,7 +18,7 @@ sections:
       text: |
         We are a passionate research group focused on process systems engineering (PSE) at Nanyang Technological University (NTU), Singapore. Our team synergizes innovative mechanistic modeling and machine learning for sustainable process and system design.
       primary_action:
-        text: Join Our Team
+        text: Meet Our Team
         url: '#team'
         icon: hero/user-group
       secondary_action:
