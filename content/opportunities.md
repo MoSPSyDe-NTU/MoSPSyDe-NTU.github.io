@@ -84,10 +84,10 @@ sections:
     content:
       title: 'Master Research Opportunities'
       text: |
-        <div id="master-opportunities">Three different programmes are available to join our research group as NTU master students. Please note that both programmes are self-funded (check tuition fee etc in advance).
+        <div id="master-opportunities">Three different programmes are available to join our research group as NTU master students. Please note that all programmes are self-funded (check tuition fee etc in advance).
 
         - [Master of Engineering by Research](https://www.ntu.edu.sg/cceb/admissions/detail/master-of-engineering-(meng)-(by-research))
-          - Similar admission requirements and processes: please check the [programme website](https://www.ntu.edu.sg/cceb/admissions/detail/master-of-engineering-(meng)-(by-research)) carefully.
+          - Similar admission requirements and processes with PhD: please check the [programme website](https://www.ntu.edu.sg/cceb/admissions/detail/master-of-engineering-(meng)-(by-research)) carefully.
           - Please contact Ken in advance if you want to apply.
         - [Master of Science in Chemical Engineering by Coursework](https://www.ntu.edu.sg/cceb/admissions/detail/master-of-science-in-chemical-engineering)
           - While this programme mainly focuses on courses, you may choose a research project (CH6300) under our group's supervision.
