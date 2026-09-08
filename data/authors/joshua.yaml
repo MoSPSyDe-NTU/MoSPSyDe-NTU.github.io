@@ -1,0 +1,71 @@
+schema: hugoblox/author/v1
+slug: joshua
+is_owner: true
+name:
+  display: Joshua CHENG Xi Han
+role: Research Student
+bio: ""
+affiliations:
+  - name: Year 2 Bachelor of Engineering in Chemical and Biomolecular Engineering, Nanyang Technological University, Singapore
+    url: https://www.ntu.edu.sg/cceb/admissions/detail/bachelor-of-engineering-in-chemical-and-biomolecular-engineering
+    target: _blank
+    rel: "noopener"
+links:
+  - icon: hero/envelope
+    url: mailto:JCHENG053@e.ntu.edu.sg
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/joshua-cheng-xi-han
+  - icon: brands/cv
+    url: /media/authors/joshua_cv.pdf
+
+interests:
+  - Artificial Intelligence, Machine Learning, Biotechnology, Pharamceuticals, Quantitative Research, Technology & Finance
+education:
+
+work_experience:
+
+publications_manual:
+  # - type: Journal
+    # title: "A"
+    # authors:
+    #   - "Kensaku Matsunami"
+    # group_members:
+    #   - ken
+    # venue: "A"
+    # year: 22
+    # volume: "1"
+    # number: ""
+    # pages: "3"
+    # doi: "1"
+    # url: "2"
+awards_manual:
+  - 2026 AIChE-NUS Process Design Hackathon Finalist!
+skills:
+  - name: Technical
+    items:
+      - label: Python
+        level: 5
+        icon: devicon/python
+      - label: Machine Learning
+        level: 5
+        icon: hero/chart-line
+      - label: Data Science
+        level: 5
+        icon: hero/database
+  - name: Leadership
+    color: "#eeac02"
+    color_border: "#f0bf23"
+    items:
+      - label: Team Management
+        level: 5
+        icon: hero/user-group
+      - label: Grant Writing
+        level: 5
+        icon: hero/document-text
+      - label: Mentoring
+        level: 5
+        icon: hero/academic-cap
+highlight_name: true
+website: ""
+user_groups:
+  - Undergraduate Students

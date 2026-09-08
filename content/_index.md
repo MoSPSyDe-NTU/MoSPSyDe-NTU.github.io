@@ -16,7 +16,7 @@ sections:
         Model-based Sustainable Process and System Design
         **(MoSPSyDe)**
       text: |
-        We are a passionate research group focused on process systems engineering (PSE) at Nanyang Technological University (NTU), Singapore. Our team synergizes innovative mechanistic modeling and machine learning for sustainable process and system design.
+        We are a passionate research group focused on process systems engineering (PSE) at Nanyang Technological University (NTU), Singapore. Our team synergises innovative mechanistic modelling and machine learning for sustainable process and system design.
       primary_action:
         text: Meet Our Team
         url: '#team'
@@ -55,7 +55,7 @@ sections:
   - block: research-areas
     content:
       title: Research Focus Areas
-      subtitle: Advancing PSE for sustainability and digitalization
+      subtitle: Advancing PSE for sustainability and digitalisation
       text: Our group conducts cutting-edge research across multiple domains, applying mathematical models for solving global challenges
       items:
         - name: Pharmaceutical Engineering
@@ -85,7 +85,7 @@ sections:
            # url: /research/machine-learning
             
         - name: Particle Engineering
-          description: Advancing particle-involved processes through integrated population balance modeling (PBM) and machine learning
+          description: Advancing particle-involved processes through integrated population balance modelling (PBM) and machine learning
           icon: hero/sparkles
           gradient: from-purple-400 to-pink-600
           status: active
@@ -110,12 +110,14 @@ sections:
     content:
       title: Meet Our Team
       subtitle: 'Motivated researchers pushing the boundaries of science'
-      text: 'We tackle the most challenging problems toward sustainable processes and systems.'
+      text: 'We tackle the most challenging problems towards sustainable processes and systems.'
       user_groups:
         - Principal Investigator
         - Researchers
         #- Postdoctoral Researchers
         #- PhD Students
+        - Master Students
+        - Undergraduate Students
       sort_by: 'Params.last_name'
       sort_ascending: true
       #cta:

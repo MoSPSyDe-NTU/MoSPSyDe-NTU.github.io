@@ -1,0 +1,69 @@
+schema: hugoblox/author/v1
+slug: junhee
+is_owner: true
+name:
+  display: LEE Junhee
+role: Independent Research Project Student
+bio: ""
+affiliations:
+  - name: Year 4 Double Degree in Bachelor of Engineering in Chemical and Biomolecular Engineering and Bachelor of Social Science (Economics), Nanyang Technological University, Singapore
+    url: https://www.ntu.edu.sg/education/undergraduate-programme/double-degree-in-bachelor-of-engineering-(chemical-and-biomolecular-engineering)-and-bachelor-of-social-science-(economics)
+    target: _blank
+    rel: "noopener"
+links:
+  - icon: hero/envelope
+    url: mailto:junhee001@e.ntu.edu.sg
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/jh-lee-3b3998225/
+
+interests:
+#  - Machine Learning & AI
+education:
+
+work_experience:
+
+publications_manual:
+  # - type: Journal
+    # title: "A"
+    # authors:
+    #   - "Kensaku Matsunami"
+    # group_members:
+    #   - ken
+    # venue: "A"
+    # year: 22
+    # volume: "1"
+    # number: ""
+    # pages: "3"
+    # doi: "1"
+    # url: "2"
+awards_manual:
+  - Dean's List AY 22/23 & 23/24
+skills:
+  - name: Technical
+    items:
+      - label: Python
+        level: 5
+        icon: devicon/python
+      - label: Machine Learning
+        level: 5
+        icon: hero/chart-line
+      - label: Data Science
+        level: 5
+        icon: hero/database
+  - name: Leadership
+    color: "#eeac02"
+    color_border: "#f0bf23"
+    items:
+      - label: Team Management
+        level: 5
+        icon: hero/user-group
+      - label: Grant Writing
+        level: 5
+        icon: hero/document-text
+      - label: Mentoring
+        level: 5
+        icon: hero/academic-cap
+highlight_name: true
+website: ""
+user_groups:
+  - Undergraduate Students

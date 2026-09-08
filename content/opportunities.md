@@ -19,6 +19,22 @@ sections:
     design:
       columns: '1'
       css_class: 'wide-section'
+
+  - block: cta-card
+    content:
+      title: Important Note
+      text: |
+        Interested candidates should follow the guideline of the applications, depending on the levels. To inquire available positions or suitability, you should send emails to Prof. Ken at kensaku.matsunami@ntu.edu.sg. In your enquiring email, you must clearly explain:
+        1. **Motivation & Research Topics:** Explicitly describe your research motivations and the specific topics you want to work on in our group.
+        2. **Funding Source:** State your funding situation—whether you have secured a fellowship, plan to apply for a fellowship, or are enquiring if funded positions are available from the PI. *(Note: These funding declarations are not required for internal NTU UG and Master's by coursework students doing course-credit projects).*
+        3. **Mandatory Attachments:** Attach your CV (detailing educational background with GPAs, skills and publications) and ideally recommendation letters.
+        
+        ⚠️ **Please note:** These details and files are strictly mandatory. Lacking any of the relevant information or documents listed above that relate to your enquiring position in your initial email will result in **no response** to your inquiry.
+        
+        Our group is committed to diversity and inclusion. We encourage applications from any countries and backgrounds.
+    design:
+      card:
+        css_class: 'bg-primary-300 dark:bg-primary-800'
      
       
   - block: markdown
@@ -46,7 +62,7 @@ sections:
 
         **4. [NTU AI-for-X Postdoctoral Fellowship](https://www.ntu.edu.sg/research/research-careers/ntu-ai-for-x-postdoctoral-fellowship)**   
         - **Eligibility:** PhD conferred within the past 3 years in a STEM field  
-        - **Timeline:** Typically October
+        - **Timeline:** **Currently OPEN (deadline 30 October, 2026)**
 
         **5. [SG Academies South-East Asia Fellowship](https://snas.org.sg/aboutsaseaf)**   
         - **Eligibility:** ASEAN citizen (non-Singapore citizen or PR) with PhD  
@@ -95,6 +111,9 @@ sections:
         - [Master of Science in Chemical Modelling by Coursework](https://www.ntu.edu.sg/cceb/admissions/detail/master-of-science-chemical-modelling)
           - While this programme mainly focuses on courses, you may choose a research project (CH6550/6551) under our group's supervision.
           - Please contact Ken in advance to show your interests so that we can call some projects.
+        - [Master of Science in Biomedical Engineering by Coursework](https://www.ntu.edu.sg/cceb/admissions/detail/master-of-science-in-biomedical-engineering)
+          - While this programme mainly focuses on courses, you may choose a research project under our group's supervision.
+          - Please contact Ken in advance to show your interests so that we can call some projects.
 
     design:
       columns: '1'
@@ -133,7 +152,7 @@ sections:
     content:
       title: 'Visiting Research Opportunities'
       text: |
-        <div id="visiting">We are always welcome for visiting researchers regardless of levels and visiting durations. Interested candidates are welcome to send their CVs and motivation letters (indicating the purpose, timeline, and grant situations) to Prof. Ken. <b>Please also carefully check the followings to make sure which programmes apply to your case.</b>
+        <div id="visiting">We are always welcome for visiting researchers regardless of levels and visiting durations. <b>Please note that since the group does not have a budget to support visiting positions, we are happy to host only those who have secured fellowships by themselves or are self-funded visiting students.</b> Interested candidates are welcome to send their CVs and motivation letters (indicating the purpose, timeline, and grant situations) to Prof. Ken. <b>Please also carefully check the followings to make sure which programmes apply to your case.</b>
 
         - [Normal visiting research](https://www.ntu.edu.sg/education/student-exchanges/visiting-research)
           - Unless you are eligible for the other programmes, you can join us under this programme.
@@ -150,15 +169,6 @@ sections:
       spacing:
         padding: ["2rem", 0, "2rem", 0]
 
-  - block: cta-card
-    content:
-      title: How to Apply
-      text: |
-        Interested candidates should follow the guideline of the applications, depending on the levels. To inquire available positions or suitability, they should send their CVs (e.g., educations, skills, and publications) and motivation letters to Prof. Kensaku Matsunami at kensaku.matsunami@ntu.edu.sg. 
-                
-        Our group is committed to diversity and inclusion. We encourage applications from any countries and backgrounds.
-    design:
-      card:
-        css_class: 'bg-primary-300 dark:bg-primary-800'
+
 
 ---

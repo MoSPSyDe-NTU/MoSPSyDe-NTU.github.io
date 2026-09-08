@@ -1,0 +1,69 @@
+schema: hugoblox/author/v1
+slug: chanwoo
+is_owner: true
+name:
+  display: KIM Chanwoo
+role: Independent Research Project Student
+bio: ""
+affiliations:
+  - name: Year 4 Bachelor of Engineering in Chemical and Biomolecular Engineering, Nanyang Technological University, Singapore
+    url: https://www.ntu.edu.sg/cceb/admissions/detail/bachelor-of-engineering-in-chemical-and-biomolecular-engineering
+    target: _blank
+    rel: "noopener"
+links:
+  - icon: hero/envelope
+    url: mailto:chanwoo002@e.ntu.edu.sg
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/chanwoo-kim-18b28b358/
+
+interests:
+#  - Machine Learning & AI
+education:
+
+work_experience:
+
+publications_manual:
+  # - type: Journal
+    # title: "A"
+    # authors:
+    #   - "Kensaku Matsunami"
+    # group_members:
+    #   - ken
+    # venue: "A"
+    # year: 22
+    # volume: "1"
+    # number: ""
+    # pages: "3"
+    # doi: "1"
+    # url: "2"
+awards_manual:
+  - #"Best paper Award, Conference Name, 2025."
+skills:
+  - name: Technical
+    items:
+      - label: Python
+        level: 5
+        icon: devicon/python
+      - label: Machine Learning
+        level: 5
+        icon: hero/chart-line
+      - label: Data Science
+        level: 5
+        icon: hero/database
+  - name: Leadership
+    color: "#eeac02"
+    color_border: "#f0bf23"
+    items:
+      - label: Team Management
+        level: 5
+        icon: hero/user-group
+      - label: Grant Writing
+        level: 5
+        icon: hero/document-text
+      - label: Mentoring
+        level: 5
+        icon: hero/academic-cap
+highlight_name: true
+website: ""
+user_groups:
+  - Undergraduate Students

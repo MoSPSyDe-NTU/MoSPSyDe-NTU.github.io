@@ -1,0 +1,78 @@
+schema: hugoblox/author/v1
+slug: shiqin
+is_owner: true
+name:
+  display: ZHAO Shiqin
+role: Lab Attachment Student
+bio: ""
+affiliations:
+  - name: Master of Science in Chemical Modelling, Nanyang Technological University, Singapore
+    url: https://www.ntu.edu.sg/cceb/admissions/detail/master-of-science-chemical-modelling
+    target: _blank
+    rel: "noopener"
+links:
+  - icon: hero/envelope
+    url: mailto:shiqin001@e.ntu.edu.sg
+  #- icon: hero/link
+    #url: https://ken-matsunami-en.labby.jp
+  #- icon: brands/google-scholar
+   # url: https://scholar.google.com/citations?user=UpypLvAAAAAJ&hl=en&oi=ao
+  #- icon: brands/github
+   # url: https://github.com/wangziyue429-del
+  - icon: brands/linkedin
+    url: https://www.linkedin.com/in/shiqin-zhao-905362432
+  #- icon: brands/orcid
+   # url: https://orcid.org/0000-0002-8831-018X
+  #- icon: hero/academic-cap
+   # url: https://www.researchgate.net/profile/Kensaku-Matsunami #icon: brands/cv
+    #url: uploads/cv-jane-smith.pdf
+interests:
+  - AI-assisted design of experiments for efficient pharmaceutical process design
+education:
+
+work_experience:
+publications_manual:
+  # - type: Journal
+    # title: "A"
+    # authors:
+    #   - "Kensaku Matsunami"
+    # group_members:
+    #   - ken
+    # venue: "A"
+    # year: 22
+    # volume: "1"
+    # number: ""
+    # pages: "3"
+    # doi: "1"
+    # url: "2"
+awards_manual:
+  - #"Best paper Award, Conference Name, 2025."
+skills:
+  - name: Technical
+    items:
+      - label: Python
+        level: 5
+        icon: devicon/python
+      - label: Machine Learning
+        level: 5
+        icon: hero/chart-line
+      - label: Data Science
+        level: 5
+        icon: hero/database
+  - name: Leadership
+    color: "#eeac02"
+    color_border: "#f0bf23"
+    items:
+      - label: Team Management
+        level: 5
+        icon: hero/user-group
+      - label: Grant Writing
+        level: 5
+        icon: hero/document-text
+      - label: Mentoring
+        level: 5
+        icon: hero/academic-cap
+highlight_name: true
+website: ""
+user_groups:
+  - Master Students

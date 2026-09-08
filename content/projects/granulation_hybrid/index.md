@@ -1,24 +1,25 @@
 ---
-title: "Machine-learning-assisted population balance modelling for pharmaceutical crystallisation process design"
-date: 2026-04-01
+title: "Hybrid modelling of wet granulation toward sustainable process development"
+date: 2026-08-01
 authors: ["ken"]
 tags:
   - Pharmaceutical Engineering
+  - Sustainable Engineering
   - Particle Engineering
 featured: true
-summary: "Advancing mechanistic models that can design pharmaceutical crystallisation processes by integrating them with machine learning tools."
+summary: "Using data-driven mechanistic insight to transform pharmaceutical and waste-to-resource processes into scalable, sustainable solutions."
 image:
-  filename: Crystallisation_Hybrid.png
+  filename: granulation_Seed.png
   focal_point: "Center"
 ---
 
 ## Project Vision
 
-To be updated.
+This project, supported by a MOE Tier 1 Seed Fund, is developing a novel computational platform that unites mechanistic modelling with machine-learning. We are demonstrating the power of this unified model to solve two critical global problems: making drug manufacturing faster and cleaner, and valorising food waste into high-grade agricultural products.
 
 ## Project Duration
 
-2026-2031
+2026-2029
 
 ## Team
 - PI: Kensaku Matsunami

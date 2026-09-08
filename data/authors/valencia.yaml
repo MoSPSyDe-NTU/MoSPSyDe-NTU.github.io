@@ -1,0 +1,67 @@
+schema: hugoblox/author/v1
+slug: valencia
+is_owner: true
+name:
+  display: Valencia TAN
+role: URECA Student
+bio: ""
+affiliations:
+  - name: Year 2 Bachelor of Engineering in Chemical and Biomolecular Engineering with a 2nd major in Data Analytics, Nanyang Technological University, Singapore
+    url: https://www.ntu.edu.sg/education/undergraduate-programme/chemical-and-biomolecular-engineering-with-second-major-in-data-analytics
+    target: _blank
+    rel: "noopener"
+links:
+  - icon: hero/envelope
+    url: mailto:valenciatanys@gmail.com
+
+interests:
+#  - Machine Learning & AI
+education:
+
+work_experience:
+
+publications_manual:
+  # - type: Journal
+    # title: "A"
+    # authors:
+    #   - "Kensaku Matsunami"
+    # group_members:
+    #   - ken
+    # venue: "A"
+    # year: 22
+    # volume: "1"
+    # number: ""
+    # pages: "3"
+    # doi: "1"
+    # url: "2"
+awards_manual:
+  - #"Best paper Award, Conference Name, 2025."
+skills:
+  - name: Technical
+    items:
+      - label: Python
+        level: 5
+        icon: devicon/python
+      - label: Machine Learning
+        level: 5
+        icon: hero/chart-line
+      - label: Data Science
+        level: 5
+        icon: hero/database
+  - name: Leadership
+    color: "#eeac02"
+    color_border: "#f0bf23"
+    items:
+      - label: Team Management
+        level: 5
+        icon: hero/user-group
+      - label: Grant Writing
+        level: 5
+        icon: hero/document-text
+      - label: Mentoring
+        level: 5
+        icon: hero/academic-cap
+highlight_name: true
+website: ""
+user_groups:
+  - Undergraduate Students
